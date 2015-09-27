@@ -7,14 +7,19 @@ defmodule SilesianBeamersSurvey.Mixfile do
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     escript: escript]
   end
 
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :ssl]]
+  end
+
+  def escript do
+    [main_module: SilesianBeamersSurvey.CLI]
   end
 
   defp deps do
-    []
+    [{:gen_smtp, "~> 0.9.0"}]
   end
 end

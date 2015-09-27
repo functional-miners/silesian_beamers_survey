@@ -1,2 +1,0 @@
-defmodule SilesianBeamersSurvey do
-end
