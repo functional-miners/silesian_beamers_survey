@@ -1,4 +1,1 @@
-SilesianBeamersSurvey
-=====================
-
-** TODO: Add description **
+# SilesianBeamersSurvey
