@@ -22,10 +22,19 @@ defmodule SilesianBeamersSurvey.Aggregator do
     GenServer.cast({:global, :aggregator}, {:push, result})
   end
 
+  def dump() do
+    GenServer.call({:global, :aggregator}, :dump)
+  end
+
   ## Callbacks
 
   def init(:ok) do
     {:ok, []}
+  end
+
+  def handle_call(:dump, _from, results) do
+    :ok = File.write "./priv/dump.json", Poison.encode!(results)
+    {:reply, :dumped, results}
   end
 
   def handle_cast({:push, result}, results) do

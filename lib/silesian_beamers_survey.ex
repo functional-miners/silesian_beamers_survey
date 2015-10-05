@@ -22,7 +22,7 @@ defmodule SilesianBeamersSurvey do
       |> SilesianBeamersSurvey.QuestionServer.get_questions
       |> Enum.map(&ask_question/1)
 
-    Result.new(meeting, responses)
+    Result.new(meeting, :erlang.node, responses)
     |> SilesianBeamersSurvey.Aggregator.push
   end
 
