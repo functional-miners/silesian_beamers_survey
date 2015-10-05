@@ -16,6 +16,8 @@ defmodule SilesianBeamersSurvey.Mixfile do
   end
 
   defp deps do
-    []
+    [
+      {:poison, "~> 1.5.0"}
+    ]
   end
 end

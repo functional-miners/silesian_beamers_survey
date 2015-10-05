@@ -6,5 +6,8 @@
 # Dependencies:
 /deps
 
+# Dumps:
+/priv/dump.json
+
 # Crash dumps:
 erl_crash.dump
