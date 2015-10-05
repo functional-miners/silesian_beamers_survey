@@ -1,2 +1,7 @@
-W jakich językach programujesz?
-
+W jakich językach programujesz na co dzień?
+Ile masz doświadczenia w Erlangu/Elixir?
+Ile lat programujesz?
+Czy chciałbyś w przyszłości przygotować prezentację związaną z tematyką grupy?
+O czym najchętniej byś się dowiedział na następnym spotkaniu?
+Czy chciałbyś usłyszeć na każdym spotkaniu krótkie podsumowanie co nowego wydarzyło się społeczności przez ostatni miesiąc?
+Jeśli chcesz, podaj nam Twoje dane kontaktowe:
