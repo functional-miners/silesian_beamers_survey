@@ -4,7 +4,7 @@ defmodule SilesianBeamersSurvey.QuestionServer do
   end
 
   def leader_pid do
-    case :global.whereis_name(:aggregator) do
+    case :global.whereis_name(:question_server) do
       :undefined -> nil
       value      -> value
     end
@@ -17,7 +17,7 @@ defmodule SilesianBeamersSurvey.QuestionServer do
   end
 
   def reload_questions do
-    # Agent.update(__MODULE__, fn _ -> load_questions end)
+    # Agent.update(__MODULE__, fn _ -> reload_questions end)
     Agent.update({:global, :question_server}, __MODULE__, :reload_questions, [])
   end
 
