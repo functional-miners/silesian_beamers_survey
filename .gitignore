@@ -7,7 +7,7 @@
 /deps
 
 # Dumps:
-/priv/dump.json
+/priv/*.json
 
 # Crash dumps:
 erl_crash.dump
