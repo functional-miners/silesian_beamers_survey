@@ -3,7 +3,7 @@ defmodule SilesianBeamersSurvey.Response do
 
   defstruct [:question, :response]
 
-  def new(question, response, node) when is_binary(question) and is_binary(response) do
+  def new(question, response) when is_binary(question) and is_binary(response) do
     %Response{question: question, response: response}
   end
 end
